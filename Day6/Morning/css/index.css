@@ -1,0 +1,44 @@
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* left session */
+.left{
+    width: 25%;
+    background-color: azure;
+    text-align: center;
+}
+
+.left>article>img{
+    width: 50%;
+}
+
+/* right artical */
+
+.right{
+    width: 74%;
+    background-color: rgb(197, 246, 246);
+
+}
+
+/* media queries for mobile view */
+
+@media (min-device-width:320px) and (max-device-width:480px){
+    .left,
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        display: flex;
+    }
+
+    .left>div,
+    .left>article{
+        width: 49%;
+    }
+    
+}

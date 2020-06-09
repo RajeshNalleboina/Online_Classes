@@ -1,0 +1,31 @@
+/* Universal */
+
+*{
+    text-transform: uppercase;
+}
+
+/* main section */
+#main{
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Class rep as .className Id rep as #idname */
+.card{
+    width: 30%;
+    background-color: #aaa;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 30% 0;
+    box-shadow: 6px 6px 6px 3px;
+
+}
+
+/* styles for img */
+
+.card>img{
+    /* border-radius: 50%; */
+    width: 50%;
+    height: 50%;
+}
