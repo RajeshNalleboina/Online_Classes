@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body id="root">
+    
+
+    <script src="js/index.js"></script>
+    <script>
+        var body=document.getElementById("root");
+        body.innerHTML="Rajesh";
+        // child element
+        var sec=document.createElement("section");
+        sec.classList.add("main");
+        //  create h1 tag in section tag
+        var heading1=document.createElement("h1");
+        console.log(heading1);
+        sec.appendChild(heading1);
+        console.log(body);
+        
+        body.appendChild(sec);
+
+        // Number
+        
+
+        // Strings
+        var str="Rajesh";
+        var str2='Rajesh';
+        
+        console.log(typeof(str));
+        console.log(typeof(str2));
+
+
+        // Boolean
+        var t= true;
+        console.log(typeof(t));
+
+        // Undefined
+        
+        var un;
+        console.log(typeof(un));
+        
+        // Object
+        var data={a:20,b:"Rajesh",c:"True"}
+        console.log(typeof(data));
+
+        // array
+        var arr=["raj", "raja"];
+        console.log(typeof(arr));
+
+        // get index using for in 
+        var a=["Rajesh","Ravindra","Ram","Raghu"]
+        for(var i in a){
+            console.log(i);
+        }
+        // get values using for in
+       var a=["Rajesh","Ravindra","Ram","Raghu"]
+        for(var i in a){
+            console.log(a[i]);
+        }
+        // get array values using for of
+
+        var a=["Gaya3 Mam", "RAjesh", "Swami","Surya Narayana"]
+        for(var i of a){
+            console.log(i);
+        }
+
+        // get string letters using for of
+        var b="Rajesh Nalleboina"
+        for(var j of b){
+            console.log(j);
+        }
+
+    </script>
+</body>
+</html>
